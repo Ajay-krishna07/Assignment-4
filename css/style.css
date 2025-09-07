@@ -297,6 +297,10 @@ footer {
 		background-image: linear-gradient(rgb(222, 130, 130), rgb(80, 43, 43));
 	}
 
+	header {
+		max-width: 100%;
+	}
+
 	.about-container {
 		width: 100%;
 		gap: 20px;
@@ -407,6 +411,10 @@ footer {
 }
 
 @media only screen and (max-width: 1024px) {
+	
+	header {
+		max-width: 100%;
+	}
 	.menu ul {
 		margin-right: 120px;
 	}
@@ -491,13 +499,19 @@ footer {
 
 }
 
-/* @media only screen and (min-width: 1024px) {
+@media only screen and (min-width: 1024px) {
 	
-	.projectsss {
-
+	.about_me {
+		max-width: 100%;
+		gap: 35px;
 	}
 
-} */
+	header {
+		width: 100%;
+	}
+
+
+}
 	/* .about_me {
 		width: 100%;
 	}
