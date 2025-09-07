@@ -82,12 +82,28 @@
             padding-top: 19px;
             padding-left: 80px;
         }
+
+        .heading {
+            width: 50%;
+            height: 100px;
+            display: flex;
+            align-items: center;
+        }
+
+        .heading h1 {
+            color: white;
+            font-size: 35px;
+            font-family: Helvetica Neue;
+            padding-left: 80px;
+        }
+
         .menu {
             width: 600px;
-            float: left;
-            height: 70px;
-            padding-left: 460px;
-            padding-top: 5px;
+            /* float: left; */
+            /* height: 70px; */
+            /* padding-left: 460px; */
+            /* padding-top: 5px;
+             */
 
 
         }
@@ -97,13 +113,14 @@
             display: flex;
             justify-content: center;
             align-items: center;
-            padding-left: 80px;
+            /* padding-left: 80px; */
+            gap:100px;
         }
 
         ul li {
             list-style: none;
-            margin-left: 62px;
-            margin-top: 27px;
+            /* margin-left: 62px; */
+            /* margin-top: 27px; */
             font-size: 14px;
         }
 
@@ -118,13 +135,22 @@
         ul li a:hover {
             color: yellow;
         }
+
+        @media only screen and (max-width: 768px) {
+            .logo {
+                padding-top: 0px;
+                padding-left: 50px;
+            }
+        }
     </style>
 </head>
 
 <body>
     <header>
         <div class="navbar">
-            <h1 class="logo">Porfolio</h1>
+            <div class="heading">
+                <h1>Porfolio</h1>
+            </div>
             <div class="menu">
                 <ul>
                     <li><a href="../index.html">HOME</a></li>
@@ -138,7 +164,7 @@
         <h2>Want To Get In Touch?</h2>
         <form>
             <div class="form-row">
-                <input type="text" placeholder="Name" required>
+                <input type="text" placeholder="Name" required />
                 <input type="email" placeholder="Email" required>
             </div>
             <input type="text" placeholder="Phone Number" pattern="[0-9]{10}" required>
